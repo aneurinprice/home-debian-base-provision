@@ -1,7 +1,7 @@
 stages:
   - test
 
-terraform:
+test:
   stage: test
   tags:
     - generic

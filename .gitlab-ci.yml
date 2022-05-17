@@ -8,6 +8,5 @@ test:
   image: "debian:bullseye-slim"
   script:
     - bash ./bootstrap.sh
-    - su - ansible
-    - whoami
-    - sudo apt-get update
+    - sudo --user ansible whoami
+    - sudo --user ansible sudo apt-get update

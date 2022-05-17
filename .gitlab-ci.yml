@@ -7,8 +7,7 @@ test:
     - generic
   image: "debian:bullseye-slim"
   script:
-    - set -eux
     - bash ./bootstrap.sh
     - su - ansible
-    - whoami | grep ansible
+    - whoami
     - sudo apt-get update

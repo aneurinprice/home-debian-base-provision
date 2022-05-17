@@ -9,4 +9,5 @@ terraform:
   script:
     - bash ./bootstrap.sh
     - su - ansible
+    - whoami | grep "ansible"
     - sudo apt-get update

@@ -1,0 +1,12 @@
+stages:
+  - test
+
+terraform:
+  stage: test
+  tags:
+    - generic
+  image: "debian:bullseye-slim"
+  script:
+    - bash ./bootstrap.sh
+    - su - ansible
+    - sudo apt-get update

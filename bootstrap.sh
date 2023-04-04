@@ -7,7 +7,7 @@ sleep 3
 
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get -y install sudo
+apt-get -y install sudo qemu-guest-agent
 
 echo "########################"
 echo "##     SUDO Stuff     ##"

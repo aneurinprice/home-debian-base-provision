@@ -3,8 +3,6 @@ stages:
 
 test:
   stage: test
-  tags:
-    - generic
   image: "debian:bullseye-slim"
   script:
     - bash ./bootstrap.sh
